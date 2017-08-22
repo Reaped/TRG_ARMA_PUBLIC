@@ -162,5 +162,6 @@ class AS {
 		class JNA_dropPercentage {};
 		class JNA_classifyItem {};
 		class JNA_setupGear {};
+		class JNA_getItemCount{};
 	};
 };
