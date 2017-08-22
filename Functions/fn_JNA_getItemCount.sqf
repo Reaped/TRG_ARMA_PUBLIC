@@ -6,7 +6,7 @@
         0: ARRAY - Items to be Found in the Database
 
      Returns:
-        ARRAY - Array of Quantitys of items
+        ARRAY - Array of Arrays of Names and Quantitys of items
 
      Example:
         [unlockedWeapons] call AS_JNA_getItemCount;
@@ -31,7 +31,9 @@ if (count _array > 0) then {
     
     for[{private _i=0},{_i < (count (jna_dataList select index))},{_i =_i +1}] do 
         { 
-            _returnArray pushback (((jna_dataList select _index) select _i) select 1);
+		if ((((jna_dataList select _index) select _i) select 0) isEqualto _className) then {
+		_returnArray pushback [_Classname,(((jna_dataList select _index) select _i) select 1)];
+		};
         };
 } forEach _array; 
 
