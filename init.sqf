@@ -37,9 +37,9 @@ if (!isMultiPlayer) then {
 
 waitUntil {(!isNil "saveFuncsLoaded") and (!isNil "serverInitDone")};
 
-//call jn_fnc_logistics_init;
-//cajaVeh call jn_fnc_garage_init;
-//caja call jn_fnc_arsenal_init;
+call jn_fnc_logistics_init;
+cajaVeh call jn_fnc_garage_init;
+caja call jn_fnc_arsenal_init;
 
 [] execVM "Scripts\fn_advancedTowingInit.sqf";
 [] execVM "Dialogs\welcome.sqf";

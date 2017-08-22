@@ -1,4 +1,4 @@
-﻿
+
 class HQ_menu
 {
 	idd=100;
@@ -21,7 +21,7 @@ BTN_R1(-1, "Ingame Member's List", "", "if (isMultiplayer) then {[] execVM ""Org
 BTN_R2(109, "Train FIA", "", STR_HQ_FIA);
 BTN_R3(-1, "Rebuild Assets", "Cost: 5.000 €", "closeDialog 0; [] execVM ""rebuildAssets.sqf"";");
 
-//BTN_M(BTN_Y_4, -1, "Garage Access", "", "closeDialog 0; [false] spawn garage;");
+BTN_M(BTN_Y_4, -1, "Garage Access", "", "closeDialog 0; [false] spawn garage;");
 	};
 };
 

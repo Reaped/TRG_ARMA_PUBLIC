@@ -13,7 +13,7 @@ allowFunctionsLog = 1;
 enableDebugConsole = 1;
 
 respawn = "BASE";
-respawnDelay = 10;
+respawnDelay = 30;
 respawnVehicleDelay = 120;
 respawnDialog = 1;
 aiKills = 0;
@@ -317,7 +317,7 @@ class Params {
         title = "Use customized arsenal by Jeroen Not";
             values[] = {0,1};
             texts[] = {"Off","On"};
-            default = 0;
+            default = 1;
             typeName = "BOOL";
             force = 1;
     };
@@ -335,5 +335,5 @@ class Params {
 
 class CfgFunctions {
 	#include "Functions\functionList.hpp"
-	//#include "JeroenArsenal\functions.hpp"
+	#include "JeroenArsenal\functions.hpp"
 };

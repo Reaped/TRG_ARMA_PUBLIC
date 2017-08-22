@@ -34,7 +34,7 @@
         ACE_setting = 1;
         values[] = {0,1};
         texts[] = {"Off","On"};
-        default = 0;
+        default = 1;
         typeName = "BOOL";
         force = 1;
     };
@@ -134,7 +134,7 @@
         ACE_setting = 1;
         values[] = {0,3};
         texts[] = {"Anywhere","Repair Facility"};
-        default = 0;
+        default = 3;
         typeName = "SCALAR";
         force = 1;
     };
@@ -244,7 +244,7 @@
         ACE_setting = 1;
         values[] = {0,1};
         texts[] = {"None","Toolkit"};
-        default = 0;
+        default = 1;
         typeName = "SCALAR";
         force = 1;
     };
